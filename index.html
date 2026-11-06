@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Northstar Digital helps small businesses plan and improve their online presence.">
+  <meta name="theme-color" content="#101b2e">
+  <title>Northstar Digital | Move your business forward</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Northstar Digital home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>NORTHSTAR <b>DIGITAL</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">☰</button>
+    <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#process">Our process</a><a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> DIGITAL STRATEGY · DESIGN · DEVELOPMENT</p>
+        <h1>Make your next move your <em>best move.</em></h1>
+        <p class="hero-lede">We help growing businesses turn good ideas into clear, useful digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Tell us what you're building <span>→</span></a>
+          <a class="text-link" href="#services">Explore services</a>
+        </div>
+        <div class="hero-note"><span class="spark">✦</span><span>Thoughtful strategy. Practical technology. Human-first design.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration of a glowing north star over a dark landscape">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="star">✦</div><div class="horizon"></div>
+        <div class="art-caption"><span>01 / THE NORTHSTAR APPROACH</span><b>Clarity creates momentum.</b></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Our values">
+      <span>BUILT AROUND YOUR GOALS</span><span>✦</span><span>DESIGNED TO BE USEFUL</span><span>✦</span><span>MADE FOR WHAT'S NEXT</span>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT WE CAN DO</p><h2>Good work starts<br>with a <em>clear plan.</em></h2></div>
+        <p>Whether you're starting from scratch or improving what you already have, we focus on the next practical step.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="card-number">01</span><div class="service-icon">⌘</div><h3>Digital strategy</h3><p>Turn a broad idea into a focused plan, with goals and priorities you can act on.</p><a href="#contact" class="card-link">Plan a project <span>↗</span></a></article>
+        <article class="service-card featured"><span class="card-number">02</span><div class="service-icon">◇</div><h3>Web design</h3><p>Create a clear, welcoming website that helps visitors understand what you offer.</p><a href="#contact" class="card-link">Shape your website <span>↗</span></a></article>
+        <article class="service-card"><span class="card-number">03</span><div class="service-icon">⌁</div><h3>Digital tools</h3><p>Make everyday tasks easier with useful interactive features and simple workflows.</p><a href="#contact" class="card-link">Explore an idea <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="process section" id="process">
+      <div class="process-intro"><p class="eyebrow">A SIMPLE PROCESS</p><h2>From first thought<br>to <em>forward motion.</em></h2><p>No mystery, no unnecessary complexity. Just a collaborative process that keeps the goal in view.</p></div>
+      <div class="steps">
+        <article><span>01</span><div><h3>Listen & understand</h3><p>We start with your audience, your goals, and the problem you're trying to solve.</p></div></article>
+        <article><span>02</span><div><h3>Plan & create</h3><p>We turn the idea into a practical direction, then build and refine the experience.</p></div></article>
+        <article><span>03</span><div><h3>Launch & improve</h3><p>We check the details, share the work, and identify what could make it better next.</p></div></article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-mark" aria-hidden="true">✦</div>
+      <div><p class="eyebrow">WHY NORTHSTAR</p><h2>Technology should make things <em>clearer.</em></h2><p>Northstar Digital is a sample small-business brand built around a simple idea: good digital work should solve real problems. We value clear communication, accessible design, and tools that are easy to use.</p></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-copy"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's find your <em>next step.</em></h2><p>Use the project planner to sketch out what you need. This demo runs in your browser and does not send or store your information.</p></div>
+      <form id="projectForm" class="project-form">
+        <label for="visitorName">Your name</label><input id="visitorName" name="name" autocomplete="name" required maxlength="80" placeholder="Alex Morgan">
+        <label for="visitorEmail">Email address</label><input id="visitorEmail" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="alex@example.com">
+        <label for="projectType">What are you interested in?</label>
+        <select id="projectType" name="project" required><option value="">Choose a service</option><option>Digital strategy</option><option>Web design</option><option>Digital tools</option><option>Not sure yet</option></select>
+        <label for="projectNotes">A little about your idea <span>(optional)</span></label><textarea id="projectNotes" name="notes" rows="3" maxlength="600" placeholder="What would you like to make easier or better?"></textarea>
+        <button class="button button-primary" type="submit">Create my project summary <span>→</span></button>
+        <p class="form-note">Demo only: no message is transmitted to a server.</p>
+        <div id="formResult" class="form-result" role="status" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">✦</span><span>NORTHSTAR <b>DIGITAL</b></span></a><p>Clear direction for what's next.</p><span>© <span id="year"></span> Northstar Digital · Student website project</span></footer>
+</body>
+</html>
